@@ -9,7 +9,7 @@
 #include "nRF24L01.h"
 #include "RF24.h"
 
-#define BAUD_RATE 9600
+#define BAUD_RATE 2400
 
 #define CE 8
 #define CSN 9
@@ -35,7 +35,7 @@ void setup(void)
 {
 	Serial.begin(BAUD_RATE);
 	//
-	// Setup and configure rf radio
+	// Setup and configure RF radio
 	//
 	Serial.println("initiating radio...");
 	radio.begin();
@@ -43,7 +43,7 @@ void setup(void)
 	// optionally, increase the delay between retries & # of retries
 	radio.setRetries(15,15);
 	 
-	radio.openWritingPipe(pipes[0]);
+	radio.openReadingPipe(1,pipes[1]);
 	radio.startListening();
 	Serial.println("now listening to clients...");
 }
@@ -52,7 +52,14 @@ void loop()
 {
 	 if ( radio.available() )
 	 {
-		 //
+		 unsigned long got_response;
+		 radio.read( &got_response, sizeof(unsigned long) );
+		 Serial.println("Got request from one client...");
+
+		 // Spew it
+		 Serial.print("Response received...");
+		 Serial.print(got_response);		 
+		 Serial.println();
 	 }
 	 else{
 		 Serial.println("waiting so any client may request to connect...");
