@@ -9,10 +9,11 @@
 #include "nRF24L01.h"
 #include "RF24.h"
 
-#define BAUD_RATE 2400
+#define BAUD_RATE 9600
 
 #define CE 8
 #define CSN 9
+#define T0 4
 
 //
 // Hardware configuration
@@ -33,6 +34,11 @@ const uint64_t pipes[2] = { 0xF0F0F0F0E1LL, 0xF0F0F0F0D2LL };
 
 void setup(void)
 {
+	//enable booster
+	pinMode(T0, OUTPUT);
+	digitalWrite(T0, HIGH);
+	//////////////////////////////////////////////////////////////////////////
+	
 	Serial.begin(BAUD_RATE);
 	//
 	// Setup and configure RF radio
@@ -46,6 +52,7 @@ void setup(void)
 	radio.openReadingPipe(1,pipes[1]);
 	radio.startListening();
 	Serial.println("now listening to clients...");
+	delay(1000);
 }
 
 void loop()
@@ -64,4 +71,5 @@ void loop()
 	 else{
 		 Serial.println("waiting so any client may request to connect...");
 	 }
+	 delay(1000);
 }
