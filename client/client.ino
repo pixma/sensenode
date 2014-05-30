@@ -28,11 +28,12 @@ version 2 as published by the Free Software Foundation.
 
 
 
-#define BAUD_RATE 2400
+#define BAUD_RATE 9600
 #define MAXLEN 1024
 
 #define CE 8
 #define CSN 9
+#define BOOSTER 4
 
 //
 // Hardware configuration
@@ -54,6 +55,8 @@ int nSendData = 0;
 
 void setup()
 {
+        pinMode(BOOSTER, OUTPUT);
+        digitalWrite(BOOSTER, HIGH);
 	Serial.begin(BAUD_RATE);
 	//
 	// Setup and configure rf radio
