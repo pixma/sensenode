@@ -22,6 +22,8 @@ version 2 as published by the Free Software Foundation.
 * time to the pong node, which responds by sending the value back.  The ping
 * node can then see how long the whole cycle took.
 */
+#include <stdio.h>
+#include <string.h>
 #include <SPI.h>
 #include "nRF24L01.h"
 #include "RF24.h"
@@ -30,6 +32,10 @@ version 2 as published by the Free Software Foundation.
 
 #define BAUD_RATE 9600
 #define MAXLEN 1024
+
+#define CLIENT_ID 3
+#define MAXIMUM_LEN 512
+#define FIELDS 2
 
 #define CE 8
 #define CSN 9
@@ -47,17 +53,16 @@ RF24 radio(8,9);
 // Topology
 //
 
-// Radio pipe addresses for the 2 nodes to communicate.
 const uint64_t pipes[1] = {0xF0F0F0F0D2LL };
 int nSendData = 0;
-	
+int csendData[FIELDS] ;
 
 
 void setup()
 {
         pinMode(BOOSTER, OUTPUT);
         digitalWrite(BOOSTER, HIGH);
-	Serial.begin(BAUD_RATE);
+        Serial.begin(BAUD_RATE);
 	//
 	// Setup and configure rf radio
 	//
@@ -67,18 +72,15 @@ void setup()
 	// optionally, increase the delay between retries & # of retries
 	radio.setRetries(15,15);
 	radio.openWritingPipe(pipes[0]);
-	
-	Serial.println("now sending data...");
+        randomSeed(MAXIMUM_LEN);
 
 }
 
 void loop()
 {
-	nSendData = 35;
-	bool ok = radio.write( &nSendData, sizeof(int) );
-	if (ok)
-		Serial.println("data send, ok...");
-	else
-		Serial.println("data sending process failed!");
-	
+	nSendData = (int)random(35, 38);
+        csendData[0] = nSendData;
+        csendData[1] = CLIENT_ID;
+        radio.write(csendData, sizeof(csendData));
+        delay(1000);
 }
