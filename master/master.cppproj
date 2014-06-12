@@ -124,7 +124,7 @@
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.upload.port>COM3</arduino.upload.port>
+        <arduino.upload.port>COM14</arduino.upload.port>
         <arduino.board.name>mote328</arduino.board.name>
         <arduino.board.desc>BaseMote</arduino.board.desc>
         <arduino.board.property_bag>name=BaseMote
@@ -273,7 +273,7 @@ build.arch=AVR
     </ToolchainSettings>
     <VisualMicroSettings>
       <VisualMicroSettings>
-        <arduino.upload.port>COM3</arduino.upload.port>
+        <arduino.upload.port>COM14</arduino.upload.port>
         <arduino.board.name>mote328</arduino.board.name>
         <arduino.board.desc>BaseMote</arduino.board.desc>
         <arduino.board.property_bag>name=BaseMote

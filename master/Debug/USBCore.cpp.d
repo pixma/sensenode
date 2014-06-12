@@ -1,16 +1,16 @@
  \
- C:\Users\annim\AppData\Local\VMicro\Arduino\Builds\master\atmega328\USBCore.cpp.o:  \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\USBCore.cpp \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Platform.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Arduino.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/binary.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/WCharacter.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/WString.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/HardwareSerial.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Stream.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Print.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Printable.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino/new.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\variants\standard/pins_arduino.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/USBAPI.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/USBDesc.h
+ C:\Users\annim\AppData\Local\VMicro\Arduino\Builds\master\mote328\USBCore.cpp.o:  \
+ C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\USBCore.cpp \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Platform.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Arduino.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/binary.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/WCharacter.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/WString.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/HardwareSerial.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Stream.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Print.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Printable.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard/new.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\variants\standard/pins_arduino.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/USBAPI.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/USBDesc.h

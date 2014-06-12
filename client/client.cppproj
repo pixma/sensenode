@@ -28,15 +28,15 @@
     <BootSegment>0</BootSegment>
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.17.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.17.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -54,19 +54,17 @@
             <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=101</Value>
             <Value>ARDUINO_MAIN</Value>
-            <Value>F_CPU=16000000L</Value>
+            <Value>F_CPU=8000000L</Value>
             <Value>__AVR__</Value>
             <Value>__cplusplus</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
             <Value>C:\Users\annim\Documents\Arduino\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
@@ -89,19 +87,17 @@
             <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=101</Value>
             <Value>ARDUINO_MAIN</Value>
-            <Value>F_CPU=16000000L</Value>
+            <Value>F_CPU=8000000L</Value>
             <Value>__AVR__</Value>
             <Value>__cplusplus</Value>
           </ListValues>
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
             <Value>C:\Users\annim\Documents\Arduino\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
@@ -138,19 +134,17 @@
             <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=101</Value>
             <Value>ARDUINO_MAIN</Value>
-            <Value>F_CPU=16000000L</Value>
+            <Value>F_CPU=8000000L</Value>
             <Value>__AVR__</Value>
             <Value>__cplusplus</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
             <Value>C:\Users\annim\Documents\Arduino\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
@@ -173,19 +167,17 @@
             <Value>__AVR_ATmega328P__</Value>
             <Value>ARDUINO=101</Value>
             <Value>ARDUINO_MAIN</Value>
-            <Value>F_CPU=16000000L</Value>
+            <Value>F_CPU=8000000L</Value>
             <Value>__AVR__</Value>
             <Value>__cplusplus</Value>
           </ListValues>
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\variants\standard</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
-            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
-            <Value>C:\Program Files (x86)\Arduino\hardware\arduino\libraries</Value>
+            <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
             <Value>C:\Users\annim\Documents\Arduino\libraries</Value>
             <Value>c:\program files (x86)\arduino\hardware\tools\avr\avr\include\</Value>
@@ -209,6 +201,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="client.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MasterNode.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="nRF24L01.h">

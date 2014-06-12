@@ -22,40 +22,6 @@ version 2 as published by the Free Software Foundation.
 * time to the pong node, which responds by sending the value back.  The ping
 * node can then see how long the whole cycle took.
 */
-#include <stdio.h>
-#include <string.h>
-#include <SPI.h>
-#include "nRF24L01.h"
-#include "RF24.h"
-
-
-
-#define BAUD_RATE 9600
-#define MAXLEN 1024
-
-#define CLIENT_ID 3
-#define MAXIMUM_LEN 512
-#define FIELDS 2
-
-#define CE 8
-#define CSN 9
-#define BOOSTER 4
-
-//
-// Hardware configuration
-//
-
-// Set up nRF24L01 radio on SPI bus plus pins 9 & 10
-
-RF24 radio(8,9);
-
-//
-// Topology
-//
-
-const uint64_t pipes[1] = {0xF0F0F0F0D2LL };
-int nSendData = 0;
-int csendData[FIELDS] ;
 
 
 void setup()
@@ -72,7 +38,9 @@ void setup()
 	// optionally, increase the delay between retries & # of retries
 	radio.setRetries(15,15);
 	radio.openWritingPipe(pipes[0]);
-        randomSeed(MAXIMUM_LEN);
+    randomSeed(MAXIMUM_LEN);
+	radio.setAutoAck(pipes[0], false);
+	
 
 }
 
@@ -82,5 +50,6 @@ void loop()
         csendData[0] = nSendData;
         csendData[1] = CLIENT_ID;
         radio.write(csendData, sizeof(csendData));
+		
         delay(1000);
 }

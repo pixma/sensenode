@@ -1,7 +1,7 @@
  \
- C:\Users\annim\AppData\Local\VMicro\Arduino\Builds\master\atmega328\WInterrupts.c.o:  \
- C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\WInterrupts.c \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/wiring_private.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/Arduino.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\cores\arduino\/binary.h \
-  C:\Program\ Files\ (x86)\Arduino\hardware\arduino\variants\standard/pins_arduino.h
+ C:\Users\annim\AppData\Local\VMicro\Arduino\Builds\master\mote328\WInterrupts.c.o:  \
+ C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\WInterrupts.c \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/wiring_private.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/Arduino.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\cores\standard\/binary.h \
+  C:\Program\ Files\ (x86)\Arduino\hardware\basemote\variants\standard/pins_arduino.h
