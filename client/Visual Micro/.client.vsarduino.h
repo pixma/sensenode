@@ -23,6 +23,7 @@ extern "C" void __cxa_pure_virtual() {;}
 #include "C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard\arduino.h"
 #include "D:\Repos\sensenode\client\client.ino"
+#include "D:\Repos\sensenode\client\MasterNode.cpp"
 #include "D:\Repos\sensenode\client\MasterNode.h"
 #include "D:\Repos\sensenode\client\RF24.cpp"
 #include "D:\Repos\sensenode\client\RF24.h"

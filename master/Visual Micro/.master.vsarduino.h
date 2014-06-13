@@ -23,6 +23,8 @@ void setup(void);
 #include "C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard\arduino.h"
 #include "D:\Repos\sensenode\master\master.ino"
+#include "D:\Repos\sensenode\master\MasterNode.cpp"
+#include "D:\Repos\sensenode\master\MasterNode.h"
 #include "D:\Repos\sensenode\master\RF24.cpp"
 #include "D:\Repos\sensenode\master\RF24.h"
 #include "D:\Repos\sensenode\master\RF24_config.h"

@@ -203,6 +203,9 @@
     <Compile Include="client.ino">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MasterNode.cpp">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="MasterNode.h">
       <SubType>compile</SubType>
     </Compile>

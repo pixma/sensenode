@@ -341,6 +341,12 @@ build.arch=AVR
     <Compile Include="master.ino">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MasterNode.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MasterNode.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="nRF24L01.h">
       <SubType>compile</SubType>
     </Compile>
