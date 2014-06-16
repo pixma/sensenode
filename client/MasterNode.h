@@ -10,11 +10,24 @@
 #define MASTERNODE_H_
 
 
+
+
+
 #include <stdio.h>
 #include <string.h>
 #include <SPI.h>
+#include <stdlib.h>
 #include "nRF24L01.h"
 #include "RF24.h"
+
+
+#define CE 8
+#define CSN 9
+#define T0 4
+#define SEEK_SERVER_TIME 5000
+#define BOOSTER 4
+
+#define SLAVE_ID_1 3
 
 
 
@@ -23,15 +36,13 @@
 
 #define MAXIMUM_LEN 512
 #define FIELDS 2
-RF24 radio(CE,CSN);
+
+
 
 //
 // Topology
-//
 
 const uint64_t pipes[1] = {0xF0F0F0F0D2LL };
-int nSendData = 0;
-int csendData[FIELDS] ;
 
 
 /************************************************************************/
@@ -66,7 +77,7 @@ class MasterNode{
 	returns false if fails.
 	- pass an array of int type data                                                                     
 	- pass the size of the array
-	Shall be commonly used by client ot send data to internet via master node of the network.
+	Shall be commonly used by client ot send data to Internet via master node of the network.
 	*/
 	int http_request( int param[] , int nsize);
 	
@@ -87,7 +98,7 @@ class MasterNode{
 	                                                                     */
 	/************************************************************************/
 	
-	int [] listen(int timeout, int nsize);	
+	int * listen(int timeout, int nsize);	
 	
 	/************************************************************************/
 	/* bool writeToClient(int clientId, int data[], int nsize);

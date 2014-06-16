@@ -63,6 +63,8 @@
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
@@ -96,6 +98,8 @@
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
@@ -143,6 +147,8 @@
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>
@@ -176,6 +182,8 @@
           <ListValues>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\cores\standard</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\variants\standard</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI</Value>
+            <Value>C:\Program Files (x86)\Arduino\libraries\SPI\utility</Value>
             <Value>C:\Program Files (x86)\Arduino\libraries</Value>
             <Value>C:\Program Files (x86)\Arduino\hardware\basemote\libraries</Value>
             <Value>C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers</Value>

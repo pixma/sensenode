@@ -6,6 +6,8 @@
 */
 #include "MasterNode.h"
 
+RF24 radio(CE,CSN);
+
 void MasterNode::beginDevice( int type)
 {
 	pinMode(BOOSTER, OUTPUT);
@@ -28,7 +30,7 @@ void MasterNode::beginDevice( int type)
 		break;
 		case 2:
 		//master side code goes here.
-		radio.openWritingPipe(1,pipes[0]);//open pipe for listening.
+		radio.openReadingPipe(1, pipes[0]);//open pipe for listening.
 		mode = 2;
 		//master mode
 		break;
@@ -50,10 +52,11 @@ void MasterNode::enableAck(bool enable){
 	radio.setAutoAck(enable);
 }
 
-int [] MasterNode::listen(int timeout, int nsize){
+int * MasterNode::listen(int timeout, int nsize){
 	
 	//will enable device to listen the device.
-	int got_response[nsize] = {0};
+	int *got_response;
+	got_response = (int *)malloc(nsize*sizeof(int));// this creates 1 d array.
 	int start = millis();
 	
 	
@@ -61,7 +64,7 @@ int [] MasterNode::listen(int timeout, int nsize){
 	{
 		if (radio.available())
 		{
-			radio.openWritingPipe(1,pipes[0]);//open pipe for listening.
+			radio.openReadingPipe(1,pipes[0]);//open pipe for listening.
 			radio.read(got_response, nsize);
 			
 			#ifdef WITH_SERIAL
@@ -92,21 +95,21 @@ bool MasterNode::writeToClient(int clientId, int data[], int nsize){
 	
 	radio.openWritingPipe(pipes[0]);// open pipe for writing .
 	
-	radio.write(clientId, sizeof(int));
+	radio.write((const void *)clientId, sizeof(int));
 	
 	if (radio.write(data,nsize)  == true)
 	{
 		//success
-		radio.openWritingPipe(1,pipes[0]);// open pipe for listening now...
+		radio.openReadingPipe(1,pipes[0]);// open pipe for listening now...
 		return true;
 	}
 	else{
 		//failed
-		radio.openWritingPipe(1,pipes[0]);// open pipe for listening now...
+		radio.openReadingPipe(1,pipes[0]);// open pipe for listening now...
 		return false;
 	}
 	
-	radio.openWritingPipe(1,pipes[0]);// open pipe for listening now...
+	radio.openReadingPipe(1,pipes[0]);// open pipe for listening now...
 	return false;
 	
 }

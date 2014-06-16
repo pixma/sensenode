@@ -11,21 +11,18 @@
 
 #define BAUD_RATE 9600
 
-#define CE 8
-#define CSN 9
-#define T0 4
-#define SEEK_SERVER_TIME 5000
-
-#define SLAVE_ID_1 3
 
 #define WITH_SERIAL
+
 
 #include "MasterNode.h"
 MasterNode node;
 
+
+
 int startTime = 0;
 
-int buf[TYP_SIZE] = {0};
+int *buf;
 int incomebytes[1] = {0};
 
 void setup(void)

@@ -21,7 +21,18 @@ version 2 as published by the Free Software Foundation.
 * with the serial monitor and sending a 'T'.  The ping node sends the current
 * time to the pong node, which responds by sending the value back.  The ping
 * node can then see how long the whole cycle took.
+
+
 */
+
+
+#include <stdio.h>
+#include <string.h>
+#include <SPI.h>
+#include <stdlib.h>
+#include "nRF24L01.h"
+#include "RF24.h"
+
 #define CE 8
 #define CSN 9
 #define BOOSTER 4
@@ -34,8 +45,11 @@ version 2 as published by the Free Software Foundation.
 
 #include "MasterNode.h"
 MasterNode node;
+int nSendData = 0;
+int csendData[2] = {0};
 
-int buf[TYP_SIZE] = {0};
+//int buf[TYP_SIZE] = {0};
+int *buf;
 
 void setup()
 {
